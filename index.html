@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Personal home page of Alex Pzybylowski, a Software Development student interested in technology and web development.">
+    <meta name="author" content="Alex Pzybylowski">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Alex Pzybylowski</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">
+                Scripture
+            </a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Alex Pzybylowski</h1>
+
+        <div class="cards">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div>
+                        <p>
+                            Hello! My name is Alex Pzybylowski. I am a Software
+                            Development student with a strong interest in technology,
+                            programming, and web development.
+                        </p>
+
+                        <p>
+                            I enjoy learning how computers and software work and
+                            developing new technical skills. My goal is to continue
+                            growing as a developer and build useful and creative
+                            solutions with technology.
+                        </p>
+                    </div>
+
+                    <img src="images/profile.png" alt="Professional photo of Alex Pzybylowski">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>My Interests</h2>
+
+                <div class="interest-content">
+                    <div>
+                        <h3>Technology & Development</h3>
+
+                        <p>
+                            I am interested in software development, computers,
+                            hardware, web technologies, and learning new programming
+                            skills.
+                        </p>
+
+                        <p>
+                            WDD 131 is helping me improve my knowledge of HTML,
+                            CSS, JavaScript, and responsive web design.
+                        </p>
+                    </div>
+
+                    <div class="placeholder-image">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Alex Pzybylowski
+            <br>
+            Brazil
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger on larger screens */
+
+    #menu {
+        display: none;
+    }
+
+    /* Navigation */
+
+    nav {
+        display: flex;
+
+        width: auto;
+
+        flex-direction: row;
+
+        margin-top: 0;
+
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.7rem 1.2rem;
+    }
+
+    /* Main */
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+
+        margin-bottom: 2rem;
+    }
+
+    /* Three columns */
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 2rem;
+    }
+
+    /* Images */
+
+    figure img {
+        aspect-ratio: 4 / 3;
+    }
+}

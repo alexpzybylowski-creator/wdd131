@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f3fb;
+    color: #292133;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #4b0875, #7516a8);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* HAMBURGER */
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: none;
+    width: 100%;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 0.8rem;
+
+    font-weight: 500;
+
+    border-radius: 6px;
+
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #9c4dcc;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+
+    color: #4b0875;
+
+    font-size: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+/* TEMPLE GRID */
+
+.temple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+}
+
+/* FIGURES */
+
+figure {
+    margin: 0;
+
+    background-color: white;
+
+    padding: 0.8rem;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.22);
+}
+
+/* IMAGES */
+
+figure img {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 8px;
+}
+
+/* CAPTION */
+
+figcaption {
+    padding: 0.8rem 0.3rem 0.3rem;
+
+    color: #4b0875;
+
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+footer {
+    background: linear-gradient(135deg, #4b0875, #7516a8);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.4rem;
+}

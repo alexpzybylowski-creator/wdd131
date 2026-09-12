@@ -1,22 +1,18 @@
 @media screen and (min-width: 700px) {
 
-    /* Hide hamburger on larger screens */
+    /* HIDE HAMBURGER */
 
     #menu {
         display: none;
     }
 
-    /* Navigation */
+    /* NAVIGATION */
 
     nav {
         display: flex;
-
         width: auto;
-
         flex-direction: row;
-
         margin-top: 0;
-
         gap: 0.5rem;
     }
 
@@ -24,7 +20,7 @@
         padding: 0.7rem 1.2rem;
     }
 
-    /* Main */
+    /* MAIN */
 
     main {
         padding: 2rem;
@@ -32,19 +28,17 @@
 
     h1 {
         font-size: 2.5rem;
-
         margin-bottom: 2rem;
     }
 
-    /* Three columns */
+    /* TEMPLE GRID */
 
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
-
         gap: 2rem;
     }
 
-    /* Images */
+    /* IMAGES */
 
     figure img {
         aspect-ratio: 4 / 3;

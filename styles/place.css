@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #006b3c;
+    --secondary-color: #ffdf00;
+    --accent-color: #002776;
+    --text-color: #222;
+    --light-color: #ffffff;
+    --background-color: #f4f4f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 6px solid var(--secondary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--light-color);
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.about,
+.weather {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.facts p {
+    margin: 0.6rem 0;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.weather-info p {
+    margin: 0.7rem 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 6px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+/* Wider view */
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .about,
+    .weather {
+        margin-bottom: 0;
+        padding: 1.5rem;
+    }
+
+    .weather {
+        position: relative;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.5rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-info {
+        text-align: left;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f7f7;
+    color: #111;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #4b0875;
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/* Menu button */
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+
+/* Navigation */
+
+nav {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    padding: 0.5rem 0.75rem;
+
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #6b1a91;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+
+    color: #4b0875;
+
+    margin: 1rem 0 2rem;
+}
+
+
+/* =========================
+   TEMPLE GRID
+   ========================= */
+
+.temple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+}
+
+
+/* =========================
+   TEMPLE CARD
+   ========================= */
+
+figure {
+    margin: 0;
+
+    padding: 1rem;
+
+    background-color: #eeeeee;
+
+    border: 1px solid #d0d0d0;
+
+    text-align: center;
+}
+
+
+/* Temple name */
+
+figcaption h2 {
+    margin: 0 0 0.8rem;
+
+    font-size: 1.4rem;
+
+    font-weight: 500;
+
+    color: #111;
+}
+
+
+/* Information */
+
+figcaption p {
+    margin: 0.25rem 0;
+
+    font-size: 0.9rem;
+}
+
+figcaption p span {
+    color: #4b0875;
+
+    font-variant: small-caps;
+
+    font-weight: 500;
+}
+
+
+/* Temple image */
+
+figure img {
+    display: block;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    height: auto;
+
+    margin: 1.2rem auto 0;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+
+    background-color: #4b0875;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (min-width: 32rem) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+
+        width: auto;
+
+        flex-direction: row;
+
+        gap: 1rem;
+
+        margin-top: 0;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   DESKTOP
+   ========================= */
+
+@media screen and (min-width: 64rem) {
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 2rem;
+    }
+}

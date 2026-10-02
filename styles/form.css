@@ -1,181 +1,182 @@
-
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box;
+  }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f1f8;
-    color: #222;
-    line-height: 1.5;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f4f1f8;
+color: #222;
+line-height: 1.5;
 }
 
 header {
-    background-color: #3f2b56;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
+background-color: #3f2b56;
+color: white;
+text-align: center;
+padding: 1.5rem;
 }
 
 header h1 {
-    margin: 0;
+margin: 0;
 }
 
 main {
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+max-width: 700px;
+margin: 2rem auto;
+padding: 0 1rem;
 }
 
 form {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+background-color: white;
+padding: 1.5rem;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+border: none;
+padding: 0;
+margin: 0;
 }
 
 legend {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 1rem;
 }
 
 label {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
+display: block;
+margin-top: 1rem;
+font-weight: bold;
 }
 
 label span {
-    font-weight: normal;
-    font-size: 0.9rem;
-    color: #555;
+font-weight: normal;
+font-size: 0.9rem;
+color: #555;
 }
 
 select,
 input[type="date"],
 input[type="text"],
 textarea {
-    width: 100%;
-    margin-top: 0.4rem;
-    padding: 0.75rem;
-    border: 1px solid #777;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: white;
+width: 100%;
+margin-top: 0.4rem;
+padding: 0.75rem;
+border: 1px solid #777;
+border-radius: 5px;
+font-size: 1rem;
+background-color: white;
 }
 
 textarea {
-    resize: vertical;
+resize: vertical;
 }
 
 select:focus,
 input:focus,
 textarea:focus {
-    outline: 3px solid #b9a0d0;
-    border-color: #3f2b56;
+outline: 3px solid #b9a0d0;
+border-color: #3f2b56;
 }
 
 .rating {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+margin-top: 1.5rem;
+padding: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
 }
 
 .rating-options {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 0.5rem;
 }
 
 .rating-options label {
-    margin: 0;
-    text-align: center;
-    font-weight: normal;
-    cursor: pointer;
+margin: 0;
+text-align: center;
+font-weight: normal;
+cursor: pointer;
 }
 
 .rating-options input {
-    display: block;
-    margin: 0 auto 0.3rem;
+display: block;
+margin: 0 auto 0.3rem;
 }
 
 .rating-options span:first-of-type {
-    font-size: 1.5rem;
-    color: #3f2b56;
+font-size: 1.5rem;
+color: #3f2b56;
 }
 
 .rating-number {
-    display: block;
-    font-size: 0.8rem;
+display: block;
+font-size: 0.8rem;
 }
 
 form > fieldset > fieldset:not(.rating) {
-    margin-top: 1.5rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 5px;
+margin-top: 1.5rem;
+border: 1px solid #ccc;
+padding: 1rem;
+border-radius: 5px;
 }
 
 form > fieldset > fieldset:not(.rating) label {
-    font-weight: normal;
-    margin-top: 0.6rem;
+font-weight: normal;
+margin-top: 0.6rem;
 }
 
 form > fieldset > fieldset:not(.rating) input {
-    margin-right: 0.5rem;
+margin-right: 0.5rem;
 }
 
 input[type="submit"] {
-    display: block;
-    width: 100%;
-    margin-top: 1.5rem;
-    padding: 0.9rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #3f2b56;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
+display: block;
+width: 100%;
+margin-top: 1.5rem;
+padding: 0.9rem;
+border: none;
+border-radius: 5px;
+background-color: #3f2b56;
+color: white;
+font-size: 1.1rem;
+font-weight: bold;
+cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #2d1e3d;
+background-color: #2d1e3d;
 }
 
 input[type="submit"]:focus {
-    outline: 3px solid #b9a0d0;
-    outline-offset: 2px;
+outline: 3px solid #b9a0d0;
+outline-offset: 2px;
 }
 
 footer {
-    background-color: #3f2b56;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+background-color: #3f2b56;
+color: white;
+text-align: center;
+padding: 1.5rem;
+margin-top: 2rem;
 }
 
 footer p {
-    margin: 0.3rem;
+margin: 0.3rem;
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        padding: 0;
-    }
+main {
+padding: 0;
+}
 
-    form {
-        padding: 2rem;
-    }
+```
+form {
+    padding: 2rem;
 }
 ```
+
+}

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Pzybylowski">
+    <meta name="description" content="Evaluate your PC components and explore upgrade suggestions for gaming, programming, and everyday computing.">
+    <title>Upgrade Advisor | PC Upgrade Advisor</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">PC Upgrade Advisor</a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="advisor.html" aria-current="page">Upgrade Advisor</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-heading">
+            <h1>PC Upgrade Advisor</h1>
+            <p>
+                Enter your current PC specifications and choose
+                how you use your computer to receive suggestions.
+            </p>
+        </section>
+
+        <section class="form-panel">
+            <form id="advisor-form">
+                <div class="form-group">
+                    <label for="cpu">Processor (CPU)</label>
+                    <input
+                        type="text"
+                        id="cpu"
+                        name="cpu"
+                        placeholder="Example: Intel Core i5-10400"
+                        required
+                        minlength="2"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="gpu">Graphics Card (GPU)</label>
+                    <input
+                        type="text"
+                        id="gpu"
+                        name="gpu"
+                        placeholder="Example: NVIDIA RTX 3060"
+                        required
+                        minlength="2"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="ram">Installed RAM</label>
+                    <select id="ram" name="ram" required>
+                        <option value="">Select RAM capacity</option>
+                        <option value="4">4 GB</option>
+                        <option value="8">8 GB</option>
+                        <option value="16">16 GB</option>
+                        <option value="32">32 GB</option>
+                        <option value="64">64 GB or more</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="storage">Primary Storage</label>
+                    <select id="storage" name="storage" required>
+                        <option value="">Select storage type</option>
+                        <option value="hdd">Hard Disk Drive (HDD)</option>
+                        <option value="sata">SATA SSD</option>
+                        <option value="nvme">NVMe SSD</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="usage">Main Computer Use</label>
+                    <select id="usage" name="usage" required>
+                        <option value="">Select your main use</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="programming">Programming</option>
+                        <option value="everyday">Everyday Tasks</option>
+                        <option value="creative">Creative Work</option>
+                    </select>
+                </div>
+
+                <button class="button" type="submit">
+                    Analyze My PC
+                </button>
+            </form>
+        </section>
+
+        <section
+            id="results"
+            class="results-panel"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+        >
+            <h2>Your Upgrade Recommendations</h2>
+            <p id="results-summary"></p>
+            <ul id="recommendations"></ul>
+            <p class="disclaimer">
+                These suggestions are general guidelines, not a
+                compatibility guarantee. Check your motherboard,
+                power supply, budget, and component compatibility
+                before purchasing hardware.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> PC Upgrade Advisor</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>

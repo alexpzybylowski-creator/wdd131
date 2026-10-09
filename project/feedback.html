@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Pzybylowski">
+    <meta name="description" content="Share feedback about the PC Upgrade Advisor and help improve the experience for computer users.">
+    <title>Feedback | PC Upgrade Advisor</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">PC Upgrade Advisor</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="advisor.html">Upgrade Advisor</a>
+            <a href="feedback.html" aria-current="page">Feedback</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="page-heading">
+            <h1>Share Your Feedback</h1>
+            <p>
+                Tell us about your experience and how we could
+                make the PC Upgrade Advisor more useful.
+            </p>
+        </section>
+
+        <section class="form-panel">
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-name">Name (optional)</label>
+                    <input
+                        type="text"
+                        id="feedback-name"
+                        name="name"
+                        autocomplete="name"
+                        maxlength="80"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-rating">How was your experience?</label>
+                    <select id="feedback-rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="5">5 - Excellent</option>
+                        <option value="4">4 - Very good</option>
+                        <option value="3">3 - Good</option>
+                        <option value="2">2 - Fair</option>
+                        <option value="1">1 - Poor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-usage">What do you use your PC for?</label>
+                    <select id="feedback-usage" name="usage" required>
+                        <option value="">Select your main use</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="programming">Programming</option>
+                        <option value="everyday">Everyday Tasks</option>
+                        <option value="creative">Creative Work</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback-comments">Comments or suggestions</label>
+                    <textarea
+                        id="feedback-comments"
+                        name="comments"
+                        rows="5"
+                        minlength="5"
+                        maxlength="1000"
+                        placeholder="Tell us what worked well or what we could improve."
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="button" type="submit">Submit Feedback</button>
+            </form>
+            <p id="feedback-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> PC Upgrade Advisor</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
